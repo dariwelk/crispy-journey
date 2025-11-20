@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Советы по саморазвитию. Психология</title>
+    <link rel="stylesheet" href="styles(CSS).css">
+</head>
+<body>
+    <header>
+    <h1>🧠 Советы по саморазвитию и психологии</h1>
+    <nav>
+    <ul>
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#articles">Статьи</a></li>
+        <li><a href="#habits">Привычки</a></li>
+        <li><a href="#goals">Цели</a></li>
+        <li><a href="#meditation">Медитация</a></li>
+        <li><a href="#quotes">Цитаты</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+    <section id="home">
+        <h2>Добро пожаловать в мир саморазвития!</h2>
+        <p>Здесь вы найдете полезные советы, техники и статьи по психологии для личностного роста.</p>
+        <button id="moodBtn">Изменить настроение страницы</button>
+    </section>
+    
+    <section id="articles">
+    <h2>📚 Статьи по саморазвитию</h2>
+    
+    <article class="article-item">
+        <h3>Как развить привычку к саморазвитию</h3>
+        <p class="article-date">Опубликовано: 15 января 2024</p>
+        <div class="article-content">
+            <p>Саморазвитие - это непрерывный процесс, который требует дисциплины и последовательности. Вот несколько практических советов:</p>
+            <ul>
+                <li>Начните с малого - ставьте достижимые цели</li>
+                <li>Создайте ритуалы и придерживайтесь их</li>
+                <li>Отслеживайте свой прогресс</li>
+                <li>Не бойтесь ошибок - они часть обучения</li>
+            </ul>
+            <p>Помните, что формирование привычки занимает в среднем 21 день. Будьте терпеливы к себе!</p>
+        </div>
+    </article>
+
+    <article class="article-item">
+        <h3>5 техник управления стрессом</h3>
+        <p class="article-date">Опубликовано: 10 января 2024</p>
+        <div class="article-content">
+            <p>Стресс - неизбежная часть современной жизни, но им можно управлять. Вот эффективные техники:</p>
+            <ol>
+                <li><strong>Глубокое дыхание:</strong> 4-7-8 техника (вдох на 4, задержка на 7, выдох на 8)</li>
+                <li><strong>Медитация:</strong> 10 минут в день могут значительно снизить уровень стресса</li>
+                <li><strong>Физическая активность:</strong> прогулки, йога, тренировки</li>
+                <li><strong>Ведение дневника:</strong> записывайте мысли и эмоции</li>
+                <li><strong>Цифровой детокс:</strong> ограничьте время в соцсетях</li>
+            </ol>
+        </div>
+    </article>
+
+    <article class="article-item">
+        <h3>Сила позитивного мышления</h3>
+        <p class="article-date">Опубликовано: 5 января 2024</p>
+        <div class="article-content">
+            <p>Позитивное мышление не означает игнорирование проблем. Это способность находить возможности в трудностях.</p>
+            <p><strong>Практики для развития позитивного мышления:</strong></p>
+            <ul>
+                <li>Ведите дневник благодарности</li>
+                <li>Окружайте себя позитивными людьми</li>
+                <li>Практикуйте аффирмации</li>
+                <li>Фокусируйтесь на решениях, а не на проблемах</li>
+            </ul>
+        </div>
+    </article>
+</section>
+</main>
+<section id="habits">
+    <h2>Трекер полезных привычек</h2>
+    <div id="habitsList">
+        <div class="habit">
+            <span>Утренняя медитация</span>
+            <button class="completeBtn">✓</button>
+        </div>
+        <div class="habit">
+            <span>Чтение 20 минут</span>
+            <button class="completeBtn">✓</button>
+        </div>
+        <div class="habit">
+            <span>Физические упражнения</span>
+            <button class="completeBtn">✓</button>
+        </div>
+    </div>
+    <button id="addHabitBtn">Добавить привычку</button>
+</section>
+<section id="goals">
+    <h2>🎯 Мои цели на месяц</h2>
+    <form id="goalForm">
+        <div>
+            <label for="goal">Новая цель:</label>
+            <input type="text" id="goal" name="goal" placeholder="Например: Научиться медитировать" required>
+        </div>
+        <div>
+            <label for="deadline">Срок выполнения:</label>
+            <input type="date" id="deadline" name="deadline" required>
+        </div>
+        <button type="submit">Добавить цель</button>
+    </form>
+    <ul id="goalsList"></ul>
+</section>
+<section id="quotes">
+    <h2>Цитата дня для вдохновения</h2>
+    <blockquote id="dailyQuote"></blockquote>
+    <button id="newQuoteBtn">Новая цитата</button>
+</section>
+<section id="meditation">
+    <h2>Таймер для медитации</h2>
+    <div id="timerDisplay">05:00</div>
+    <button id="startTimer">Старт</button>
+    <button id="pauseTimer">Пауза</button>
+    <button id="resetTimer">Сброс</button>
+</section>
+<!-- Секция контактов -->
+<section id="contacts">
+    <h2>📞 Контакты</h2>
+    <div class="contacts-container">
+        <div class="contact-info">
+            <h3>Свяжитесь с нами</h3>
+            <div class="contact-item">
+                <strong>📧 Email:</strong>
+                <a href="mailto:psihologiya@selfdevelopment.com">psihologiya@selfdevelopment.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>📱 Телефон:</strong>
+                <a href="tel:+78001234567"> 8 908 765 76-76</a>
+            </div>
+            <div class="contact-item">
+                <strong>📍 Адрес:</strong>
+                <span>г. Нижний Новгород, ул. Семашко, д. 23</span>
+            </div>
+            <div class="contact-item">
+                <strong>🕒 Часы работы:</strong>
+                <span>Пн-Пт: 9:00-19:00</span>
+            </div>
+        </div>
+        <div class="social-links">
+    <h3>Мы в соцсетях</h3>
+    <div class="social-buttons">
+        <a href="https://t.me/qwetik" class="social-btn telegram-chat" target="_blank">
+            <span class="social-icon">💬</span>
+            Telegram чат
+        </a>
+        <a href="https://vk.com/qwetinri" class="social-btn vk-profile" target="_blank">
+            <span class="social-icon">👤</span>
+            Профиль ВКонтакте
+        </a>
+    </div>
+    
+</section>
+<!-- Telegram Widget (если нужно) -->
+<script async src="https://t.me/qwetik" 
+        data-telegram-post="@itispb33" 
+        data-width="100%"></script>
+<footer>
+    <p>© 2025 Советы по саморазвитию. Создано для вашего роста</p>
+</footer>
+<script src="never(JS).js"></script>
+</body>
+</html>
